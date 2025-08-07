@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Mr.Rayyan, personal portfolio website. Front-end web developer specializing in responsive design and creative UI.">
+  <meta name="keywords" content="Mr.Rayyan, Web Developer, Frontend, HTML, CSS, JavaScript, Portfolio, Karachi">
+  <meta name="author" content="Mr.Rayyan,">
+  <title>Mr.Rayyan | Full Stack Developer</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/scrollreveal"></script>
+
+</head>
+
+<body>
+  <!-- checkout -->
+
+
+
+  <header>
+    <div class="header-container">
+
+      <!-- Logo (image) -->
+
+      <nav class="navbar">
+        <div class="logo">
+          <img src="brand.logo.png" alt="logo" class="icon" />
+        </div>
+
+        <div class="nav-rights" id="nav-right">
+          <nav class="nav-linkse">
+            <a href="#">HOme</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Social media</a>
+            <a href="#">Project</a>
+          </nav>
+          <a href="#contact" class="quote-btnn">Contact</a>
+          <!-- <button class="quote-btnn">Contact</button> -->
+        </div>
+
+        <div class="menu-icon" onclick="toggleMenu()">☰</div>
+      </nav>
+  </header>
+
+ 
+
+  <!-- JS is inside HTML -->
+  <!-- <script>
+    function toggleNav() {
+      var menu = document.getElementById("navMenu");
+      menu.classList.toggle("show");
+    }
+  </script> -->
+
+  <!-- checkout -->
+  <header class="hero">
+    <div class="container">
+
+      <div class="hero-content reveal">
+        <h1>Hi, I'm <span>Mr.Rayyan</span></h1>
+        <p>A Full Stack Web Developer | Graphic Designer | Digitizing Expert</p>
+        <a href="#projects" class="btn">See My Work</a>
+      </div>
+    </div>
+  </header>
+
+   <!-- adds section -->
+<div class="adds">
+   <div class="slider-container">
+    <div class="slider" id="slider">
+      <img src="ads1.png" alt="Ad 1" />
+      <img src="ads2.png" alt="Ad 2" />
+      <img src="ads1.png" alt="Ad 1" />
+      <img src="ads2.png" alt="Ad 2" />
+      <img src="ads1.png" alt="Ad 1" />
+      <img src="ads2.png" alt="Ad 2" />
+      <!-- <img src="ads3.png" alt="Ad 3" /> -->
+    </div>
+  </div>
+  <script>
+    const slider = document.getElementById("slider");
+    let index = 0;
+    const totalSlides = slider.children.length;
+
+    setInterval(() => {
+      index = (index + 1) % totalSlides;
+      slider.style.transform = `translateX(-${index * 100}%)`;
+    }, 4000);
+  </script>
+</div>
+   <!-- adds section -->
+
+  <section class="about" id="about">
+    <div class="container reveal">
+      <h2>About Me</h2>
+      <center><img src="about.img.jpg" height="300" width="250" alt=""></center>
+      <p>I specialize in responsive web design, brand development, and full-stack web development using modern
+        technologies. I help businesses grow by creating clean, beautiful websites and designs that convert.</p>
+    </div>
+  </section>
+
+  
+
+  <section class="services" id="services">
+    <div class="container reveal">
+      <h2>Services</h2>
+      <div class="service-grid">
+        <div class="service-card">
+          <h3>🌐 Web Development</h3>
+          <p>Frontend & Backend solutions with clean, scalable code.</p>
+        </div>
+        <div class="service-card">
+          <h3>🎨 Graphic Designing</h3>
+          <p>Logos, banners, social media posts, and branding visuals.</p>
+        </div>
+        <div class="service-card">
+          <h3>🧵 Digitizing</h3>
+          <p>Embroidery-ready vector files for global clothing brands.</p>
+        </div>
+        <div class="service-card">
+          <h3>📱 UI/UX Design</h3>
+          <p>Mobile-first, user-focused layout and visual design.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="projects" id="projects">
+    <div class="container reveal">
+      <h2>Projects</h2>
+      <div class="project-grid">
+        <div class="project-card">
+          <h3>Business Website</h3>
+          <p>Responsive corporate website with custom CMS integration.</p>
+        </div>
+        <div class="project-card">
+          <h3>Portfolio Template</h3>
+          <p>Stylish one-page portfolio for freelancers and devs.</p>
+        </div>
+        <div class="project-card">
+          <h3>Brand Identity Kit</h3>
+          <p>Logo, letterhead, and social media kit for a clothing brand.</p>
+        </div>
+        <div class="project-card">
+          <h3>E-commerce Store</h3>
+          <p>Full-stack online store with secure checkout and admin panel.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="testimonials reveal">
+    <div class="container">
+      <h2>Client Reviews</h2>
+      <div class="testimonial-grid">
+        <div class="testimonial">
+          <p>“Rayyan took our brand to the next level — fast delivery and top quality!”</p>
+          <h4>— Zara, Fashion Brand CEO</h4>
+          <br>
+          <h2>⭐⭐⭐⭐⭐<br> <b>5 Out of 5</b></h2>
+        </div>
+        <div class="testimonial">
+          <p>“Amazing work! Great communication and creative design sense.”</p>
+          <h4>— Ahsan, Startup Founder</h4>
+          <br>
+          <h2>⭐⭐⭐⭐⭐ <br><b>5 Out of 5</b></h2>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="contact-content">
+        <div class="contact-text">
+          <h2>Get In Touch</h2>
+          <p>Let’s bring your ideas to life. Reach out for quotes, collaboration or just to say hello!</p>
+          <div class="socials">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#"><i class="fab fa-whatsapp"></i></a>
+          </div>
+        </div>
+        <div class="contact-form">
+          <form action="#">
+            <input type="text" placeholder="Your Name" required />
+            <input type="email" placeholder="Your Email" required />
+            <textarea rows="5" placeholder="Your Message"></textarea>
+            <button type="submit">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<a href="https://wa.me/92 3121049430" class="whatsapp-button" target="_blank" title="Chat with us on WhatsApp">
+    <img src="https://img.icons8.com/ios-filled/50/ffffff/whatsapp.png" alt="WhatsApp Icon"/>
+  </a>
+
+
+
+  <!-- Social  media -->
+<section class="social-carousel-section">
+  <h2>Follow Us On Social Media</h2>
+  <div class="carousel-container">
+    <div class="carousel-track">
+      <!-- Instagram -->
+      <div class="social-card instagram">
+        <img src="https://img.icons8.com/ios-filled/100/000000/instagram-new.png" alt="">
+        <i class="fab fa-instagram"></i>
+        <span>Instagram</span>
+      </div>
+      <!-- Facebook -->
+      <div class="social-card facebook">
+        <img src="https://img.icons8.com/ios-filled/100/000000/facebook-new.png" alt="">
+        <i class="fab fa-facebook-f"></i>
+        <span>Facebook</span>
+      </div>
+      <!-- LinkedIn -->
+      <div class="social-card linkedin">
+        <img src="https://img.icons8.com/ios-filled/100/000000/linkedin.png" alt="">
+        <i class="fab fa-linkedin-in"></i>
+        <span>Linkedin</span>
+      </div>
+      <!-- Twitter -->
+      <div class="social-card twitter">
+         <img src="https://img.icons8.com/ios-filled/100/000000/twitter.png" alt="">
+        <i class="fab fa-twitter"></i>
+        <span>Twitter</span>
+      </div>
+      <!-- Telegram -->
+      <div class="social-card telegram">
+        <img src="https://img.icons8.com/ios-filled/100/000000/telegram-app.png" alt="">
+        <i class="fab fa-telegram-plane"></i>
+        <span>Telegram</span>
+      </div>
+      <!-- YouTube -->
+      <div class="social-card youtube">
+        <img src="https://img.icons8.com/ios-filled/100/000000/youtube-play.png" alt="">
+        <i class="fab fa-youtube"></i>
+        <span>Youtube</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Font Awesome CDN -->
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+<!-- social media -->
+  <!-- ==== Footer Start ==== -->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-box">
+        <h3>About</h3>
+        <p>Your website’s mission or description goes here. Keep it short and simple.</p>
+      </div>
+
+      <div class="footer-box">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-box">
+        <h3>Contact</h3>
+        <ul>
+          <li>Email: <a href="mailto:mr.rayyan430@gmail.com">mr.rayyan430@gmail.com</a></li>
+          <li>Phone: <a href="tel:+92 3121049430">+92 3121049430</a></li>
+          <li>Location: Karachi, Pakistan</li>
+        </ul>
+      </div>
+
+      <div class="footer-box">
+        <h3>Social Media</h3>
+        <ul>
+          <li ><a href=" https://instagram.com/all.digi.works" target="_blank">Instagram</a></li>
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">Twitter</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      &copy; © 2025 All rights reserved | Mr.Rayyan
+    </div>
+  </footer>
+  <!-- ==== Footer End ==== -->
+  <script>
+    function toggleMenu() {
+      const navRight = document.getElementById("nav-right");
+      navRight.classList.toggle("active");
+    }
+
+
+  </script>
+
+  <script>
+    ScrollReveal().reveal('.reveal', {
+      distance: '60px',
+      duration: 1200,
+      easing: 'ease-out',
+      origin: 'bottom',
+      interval: 300
+    });
+  </script>
+</body>
+
+</html>
